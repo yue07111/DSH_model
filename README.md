@@ -69,5 +69,5 @@ python demo.py
 ### 克隆项目
 
 ```bash
-git clone https://github.com/你的用户名/你的项目名.git
-cd 你的项目名
+git clone https://github.com/yue07111/DSH_model.git
+cd DSH_hw
