@@ -38,24 +38,25 @@ python DSH.py
 
 - 功能2
 展现模型输出的分布
-''' bash
+```bash
 utils/output_distrubition/alaph_pic.py
-'''
+```
+
 <img src="https://github.com/yue07111/DSH_model/blob/master/utils/output_distrubition/pic_alpha.png"  alt="Matplotlib Demo"/><br/>
 - 功能3
 展示PR曲线，需要在config中定义"pr_curve_path"，修改utils/precision_recall/precision_recall_curve.py的pr数据地址
-''' bash
+```bash
 config["pr_curve_path"] = f"log/alexnet/DSH_{config['dataset']}_{bit}.json"
-'''
+```
 
 ''' bash
 python utils/precision_recall/precision_recall_curve.py
-'''
+''' 
 
 - 功能4
-''' bash
+```bash
 python demo.py
-'''
+```
 
 
 
