@@ -32,9 +32,10 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 
 - 功能1 
 直接运行,记录模型和每轮迭代的损失。
-''' bash
+
+ ```bash
 python DSH.py
-'''
+```
 
 - 功能2
 展现模型输出的分布
@@ -49,9 +50,9 @@ utils/output_distrubition/alaph_pic.py
 config["pr_curve_path"] = f"log/alexnet/DSH_{config['dataset']}_{bit}.json"
 ```
 
-''' bash
+``` bash
 python utils/precision_recall/precision_recall_curve.py
-''' 
+```
 
 - 功能4
 ```bash
