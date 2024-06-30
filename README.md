@@ -53,7 +53,7 @@ config["pr_curve_path"] = f"log/alexnet/DSH_{config['dataset']}_{bit}.json"
 ``` bash
 python utils/precision_recall/precision_recall_curve.py
 ```
-
+<img src="https://github.com/yue07111/DSH_model/blob/master/utils/output_distrubition/pic_alpha.png"  alt="Matplotlib Demo"/><br/>
 - 功能4
 ```bash
 python demo.py
