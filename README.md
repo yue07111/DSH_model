@@ -20,11 +20,32 @@
   本项目在复现DSH算法的基础上，提供了相关代码，记录训练损失和测试损失随迭代次数的变化过程，统计二值化程度并画出分布图，有助于进一步优化该模型，并且设置了不同的训练优化器和网络模型，使模型的性能有了进一步的提升。
 ## 功能
 
-主要功能和特点：
+- 功能1 
+直接运行,记录模型和每轮迭代的损失。
+''' bash
+python DSH.py
+'''
 
-- 功能1
 - 功能2
+展现模型输出的分布
+''' bash
+utils/output_distrubition/alaph_pic.py
+'''
+<img src="https://github.com/swuxyj/DeepHash-pytorch/blob/master/demo/demo.png"  alt="Matplotlib Demo"/><br/>
 - 功能3
+展示PR曲线，需要在config中定义"pr_curve_path"，修改utils/precision_recall/precision_recall_curve.py的pr数据地址
+''' bash
+config["pr_curve_path"] = f"log/alexnet/DSH_{config['dataset']}_{bit}.json"
+'''
+
+''' bash
+python utils/precision_recall/precision_recall_curve.py
+'''
+
+- 功能4
+''' bash
+python demo.py
+'''
 
 ## 安装和执行
 ```bash
@@ -34,7 +55,8 @@ conda activate your_env
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
-
+## 数据下载
+使用DPCHash_Baselines库中data文件夹中为各个数据集已经划分好的data list，对应的图像集需要自行下载，并在utils/tools.py中修改你的数据集所存放位置的地址。
 
 
 
